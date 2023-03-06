@@ -25,12 +25,13 @@
           <ul>
         <li><a id="backgroundLink" href="javascript:void(0)">BACKGROUND</a></li>
         <li><a id="testingLink" href="javascript:void(0)">TESTING</a></li>
-        <li><a id="conclusionLink" href="javascript:void(0)">UPDATED NAVIGATION</a></li>
+        <li><a id="conclusionLink" href="javascript:void(0)">CONCLUSION</a></li>
         </ul>
       </div>
     </nav>
       
       <div class="csContainer">
+        <div id="backgroundView"></div>  
         <div style="height: 200px;"></div>
 
       <section id="background">
@@ -73,7 +74,10 @@
             <div class="row no-gutters">
                 <div class="col-md-12 col-sm-12">
                     <h2>REVISED NAVIGATION PROTOTYPE</h2>
+                    <div id="testingView"></div>  
+
                     <img src="images/Version 1.png"class="card-img" alt="..." style="padding:20px;">
+
                     <p style="margin-left:2%;"><a href="https://www.figma.com/proto/A4MktP6AFHPzKEkwXSDQnN/PPAHS-NAVBAR?node-id=30%3A3&scaling=min-zoom&page-id=30%3A2&starting-point-node-id=30%3A13" target="_blank">Figma Clickable Prototype Link</a></p>
 
     </div>
@@ -107,9 +111,9 @@
                                   <li>As a physician, where would you first look for information on enhanced respiratory care certification?<span style="color:orangered;">75% Success Rate</span></li>
                                   <li>Where would you look for information on joining PPAHS?<span style="color: green;">100% Success Rate</span></li>
                                 </ol>
+                                <div id="conclusion"></div>  
 
                                 <p style="margin-left:2%;"><a href="https://drive.google.com/drive/folders/1oKI8e_8OXu_p0QaIeNdiVQTym-64zVfZ?usp=share_link" target="_blank">User Test Recordings</a></p>
-                                
                             </div>
                         </div>
                   </div>
@@ -121,7 +125,7 @@
           </div>
       </section>
     
-          <section id="conclusion">
+          <section id="revision">
             <div class="card mb-3" style="max-width: 82%;">
                 <div class="row no-gutters">
                     <div class="col-md-6 col-sm-12">
@@ -162,7 +166,7 @@
 
 
 let backgroundLink = document.querySelector("#backgroundLink");
-let background = document.querySelector("#background");
+let background = document.querySelector("#backgroundView");
 
 backgroundLink.addEventListener("click",navigateBackground,false);
 function navigateBackground(e){
@@ -171,7 +175,7 @@ function navigateBackground(e){
 }
 
 let testingLink = document.querySelector("#testingLink");
-let testing = document.querySelector("#testing");
+let testing = document.querySelector("#testingView");
 
 testingLink.addEventListener("click",navigateTesting,false);
 function navigateTesting(e){
